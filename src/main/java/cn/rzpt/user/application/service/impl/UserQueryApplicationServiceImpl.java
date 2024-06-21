@@ -37,4 +37,6 @@ public class UserQueryApplicationServiceImpl implements UserQueryApplicationServ
         }
         return list;
     }
+
+
 }

@@ -24,6 +24,14 @@ public interface UserApplicationService {
      */
     String login(LoginUserCommand command);
 
+    /**
+     * 新增Es数据
+     *
+     * @param esUserEntity 数据实体
+     * @return 是否添加成功
+     */
+    String addData(EsUserEntity esUserEntity);
+
 
 
 

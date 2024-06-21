@@ -17,4 +17,6 @@ public interface UserQueryApplicationService {
      */
     List<EsUserEntity> list();
 
+
+
 }

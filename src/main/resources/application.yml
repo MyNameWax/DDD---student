@@ -8,9 +8,9 @@ spring:
     name: ddd-demo
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/student
+    url: jdbc:mysql://192.168.200.129:3306/student
     username: root
-    password: root
+    password: 123456
   data:
     redis:
       database: 0
@@ -35,3 +35,6 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
+canal:
+  server: localhost:11111
+  destination: student

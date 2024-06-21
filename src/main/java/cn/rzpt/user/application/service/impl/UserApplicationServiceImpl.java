@@ -12,10 +12,13 @@ import cn.rzpt.user.domain.service.UserDomainService;
 import cn.rzpt.user.infrastructure.elasticsearch.entity.EsUserEntity;
 import cn.rzpt.user.infrastructure.repository.po.User;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.client.RequestOptions;
+import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Slf4j
 @Service
@@ -25,6 +28,7 @@ public class UserApplicationServiceImpl implements UserApplicationService {
     private final UserRepository userRepository;
     private final UserDomainService userDomainService;
     private final DomainEventPublisher domainEventPublisher;
+    private final RestHighLevelClient client;
 
 
     /**
@@ -61,6 +65,26 @@ public class UserApplicationServiceImpl implements UserApplicationService {
         return token;
     }
 
+    /**
+     * 新增Es数据
+     *
+     * @param esUserEntity 数据实体
+     * @return 是否添加成功
+     */
+    @Override
+    @SneakyThrows
+    public String addData(EsUserEntity esUserEntity) {
+        IndexRequest indexRequest = new IndexRequest("user")
+                .source(
+                        "id", esUserEntity.getId(),
+                        "username", esUserEntity.getUsername(),
+                        "nickname", esUserEntity.getNickname(),
+                        "email", esUserEntity.getEmail()
+                );
+        IndexResponse indexResponse = client.index(indexRequest, RequestOptions.DEFAULT);
+        log.info("同步Es数据:{}", indexResponse.getId());
+        return null;
+    }
 
 
     private static void checkUserRegisterParams(User user) {

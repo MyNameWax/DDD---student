@@ -1,6 +1,9 @@
 package cn.rzpt;
 
+import cn.rzpt.user.infrastructure.config.CanalConfig;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -8,7 +11,10 @@ import org.springframework.core.env.Environment;
 
 @Slf4j
 @SpringBootApplication
-public class DddDemoApplication {
+@RequiredArgsConstructor
+public class DddDemoApplication implements CommandLineRunner {
+
+    private final CanalConfig canalConfig;
 
     public static void main(String[] args) {
         SpringApplication app = new SpringApplicationBuilder(DddDemoApplication.class).build(args);
@@ -32,4 +38,9 @@ public class DddDemoApplication {
                 env.getActiveProfiles());
     }
 
+
+    @Override
+    public void run(String... args) throws Exception {
+        canalConfig.run();
+    }
 }
