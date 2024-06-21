@@ -40,7 +40,6 @@ public class CanalConfig {
                 connector.ack(message.getId());
             }
         } catch (Exception e) {
-//            e.printStackTrace();
             throw new BusinessException(ResponseCode.FAIL);
         } finally {
             connector.disconnect();
