@@ -4967,3 +4967,43 @@ cn.rzpt.base.exception.BusinessException: 系统错误
 2024-06-21T18:13:01.905+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 邮箱：7000@qq.com
 2024-06-21T18:13:01.906+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 新增数据：库名：student,--表名：sys_user
 2024-06-21T18:13:02.038+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.a.s.i.UserApplicationServiceImpl   : 同步Es数据:IQZJOpABzSsMkbqpAzy8
+2024-06-21T18:18:44.706+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.706+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.706+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.706+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.706+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.708+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.708+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.708+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.708+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.708+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.708+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:18:44.708+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 删除数据：库名：student,--表名：sys_user
+2024-06-21T18:19:07.249+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-3] c.r.u.i.r.mapper.UserMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) AS total FROM sys_user WHERE (username = ?)
+2024-06-21T18:19:07.250+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-3] c.r.u.i.r.mapper.UserMapper.selectCount  : ==> Parameters: MyMameWax(String)
+2024-06-21T18:19:07.252+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-3] c.r.u.i.r.mapper.UserMapper.selectCount  : <==      Total: 1
+2024-06-21T18:19:07.324+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-3] c.r.u.i.r.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO sys_user ( username, nickname, password, email, sex, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2024-06-21T18:19:07.325+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-3] c.r.u.i.r.mapper.UserMapper.insert       : ==> Parameters: MyMameWax(String), 追风少年(String), $2a$10$Z6RZurOq8.St1ZBWnH/IrOwvffSWxgvV6l.eKgXRD40S26s3k4vpm(String), waxjava04@163.com(String), 0(Integer), 2024-06-21T18:19:07.247898300(LocalDateTime), 2024-06-21T18:19:07.247898300(LocalDateTime)
+2024-06-21T18:19:07.331+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-3] c.r.u.i.r.mapper.UserMapper.insert       : <==    Updates: 1
+2024-06-21T18:19:07.331+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-3] c.r.s.event.DomainEventPublisherImpl     : 发布事件,cn.rzpt.user.infrastructure.handler：{"publishTime":"2024-06-21 18:19:07","data":{"id":27,"username":"MyMameWax","nickname":"追风少年","password":"$2a$10$Z6RZurOq8.St1ZBWnH/IrOwvffSWxgvV6l.eKgXRD40S26s3k4vpm","email":"waxjava04@163.com","sex":0,"createTime":"2024-06-21 18:19:07","updateTime":"2024-06-21 18:19:07"}}
+2024-06-21T18:19:07.979+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : ID:27
+2024-06-21T18:19:07.980+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 用户名：MyMameWax
+2024-06-21T18:19:07.980+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 昵称：追风少年
+2024-06-21T18:19:07.980+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 邮箱：waxjava04@163.com
+2024-06-21T18:19:07.980+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 新增数据：库名：student,--表名：sys_user
+2024-06-21T18:19:08.141+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.a.s.i.UserApplicationServiceImpl   : 同步Es数据:IgZOOpABzSsMkbqpmTy2
+2024-06-21T18:19:39.070+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-10] c.r.u.i.r.mapper.UserMapper.selectCount  : ==>  Preparing: SELECT COUNT( * ) AS total FROM sys_user WHERE (username = ?)
+2024-06-21T18:19:39.071+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-10] c.r.u.i.r.mapper.UserMapper.selectCount  : ==> Parameters: xuzihan(String)
+2024-06-21T18:19:39.073+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-10] c.r.u.i.r.mapper.UserMapper.selectCount  : <==      Total: 1
+2024-06-21T18:19:39.138+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-10] c.r.u.i.r.mapper.UserMapper.insert       : ==>  Preparing: INSERT INTO sys_user ( username, nickname, password, email, sex, create_time, update_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2024-06-21T18:19:39.138+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-10] c.r.u.i.r.mapper.UserMapper.insert       : ==> Parameters: xuzihan(String), 临风不自傲(String), $2a$10$qzYzgxkmrZ813lmgsub8suetEglrOSToTnRP9tH4YLcUTVjTkofsa(String), test@163.com(String), 1(Integer), 2024-06-21T18:19:39.069936300(LocalDateTime), 2024-06-21T18:19:39.069936300(LocalDateTime)
+2024-06-21T18:19:39.145+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-10] c.r.u.i.r.mapper.UserMapper.insert       : <==    Updates: 1
+2024-06-21T18:19:39.145+08:00 DEBUG 47388 --- [ddd-demo] [http-nio-9999-exec-10] c.r.s.event.DomainEventPublisherImpl     : 发布事件,cn.rzpt.user.infrastructure.handler：{"publishTime":"2024-06-21 18:19:39","data":{"id":28,"username":"xuzihan","nickname":"临风不自傲","password":"$2a$10$qzYzgxkmrZ813lmgsub8suetEglrOSToTnRP9tH4YLcUTVjTkofsa","email":"test@163.com","sex":1,"createTime":"2024-06-21 18:19:39","updateTime":"2024-06-21 18:19:39"}}
+2024-06-21T18:19:39.475+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : ID:28
+2024-06-21T18:19:39.476+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 用户名：xuzihan
+2024-06-21T18:19:39.476+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 昵称：临风不自傲
+2024-06-21T18:19:39.476+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 邮箱：test@163.com
+2024-06-21T18:19:39.476+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.infrastructure.config.CanalConfig  : 新增数据：库名：student,--表名：sys_user
+2024-06-21T18:19:39.489+08:00  INFO 47388 --- [ddd-demo] [main] c.r.u.a.s.i.UserApplicationServiceImpl   : 同步Es数据:IwZPOpABzSsMkbqpFDxZ
+2024-06-21T18:21:22.467+08:00  INFO 47388 --- [ddd-demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-21T18:21:22.487+08:00  INFO 47388 --- [ddd-demo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
