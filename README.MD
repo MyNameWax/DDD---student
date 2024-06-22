@@ -7,8 +7,7 @@
 
 ## 项目说明
 
-本项目使用 **DDD**架构进行开发,服务端使用**SpringBoot + MyBatisPlus + ElasticSearch + Canal**来实现,数据库采用了*
-*MySQL、Redis**
+本项目使用 **DDD**架构进行开发,服务端使用**SpringBoot + MyBatisPlus + ElasticSearch + Canal**来实现,数据库采用了**MySQL、Redis**
 
 ## 说明
 
@@ -18,11 +17,8 @@
 
 ### 后端
 
-**SpringBoot + MyBatis + Redis**
+**SpringBoot + MyBatis + Redis + ElasticSearch + Canal**
 
-### 前端
-
-**Vue3.0 + JavaScript+ Vue-Router + Vuex + Axios + ElementPlus**
 
 ## 赞助
 
