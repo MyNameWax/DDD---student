@@ -28,7 +28,7 @@
 
 如果此项目对你确实有帮助，欢迎给我打赏一杯咖啡～😄
 
-<img src="https://s1.locimg.com/2023/08/05/8eca8fdf37833.jpg" height="300px"/>
+<img src="./img/WxChatPay.jpg" height="300px"/>
 
 <br/>
 
